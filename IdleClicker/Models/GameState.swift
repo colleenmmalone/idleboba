@@ -27,9 +27,9 @@ class GameState: ObservableObject {
         })
     }
     
-    func click(){
-        self.points += 1
-    }
+//    func click(){
+//        self.points += 1
+//    }
     
     func purchase(pointGenerator:PointGenerator){
         if pointGenerator.price <= self.points{
