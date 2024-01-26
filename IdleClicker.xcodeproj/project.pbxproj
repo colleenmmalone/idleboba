@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61EE11A2B63664D009373EC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61EE1192B63664D009373EC /* Color.swift */; };
+		B61EE11C2B637C8A009373EC /* BuyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61EE11B2B637C8A009373EC /* BuyButton.swift */; };
+		B61EE11E2B638D49009373EC /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61EE11D2B638D49009373EC /* RecipeCard.swift */; };
 		B6926E662B60CF4100B9B79F /* IdleClickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6926E652B60CF4100B9B79F /* IdleClickerApp.swift */; };
 		B6926E682B60CF4100B9B79F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6926E672B60CF4100B9B79F /* ContentView.swift */; };
 		B6926E6A2B60CF4400B9B79F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6926E692B60CF4400B9B79F /* Assets.xcassets */; };
@@ -33,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B61EE1192B63664D009373EC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B61EE11B2B637C8A009373EC /* BuyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyButton.swift; sourceTree = "<group>"; };
+		B61EE11D2B638D49009373EC /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
 		B6926E622B60CF4100B9B79F /* IdleClicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdleClicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6926E652B60CF4100B9B79F /* IdleClickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleClickerApp.swift; sourceTree = "<group>"; };
 		B6926E672B60CF4100B9B79F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				B6926E642B60CF4100B9B79F /* IdleClicker */,
+				B61EE1192B63664D009373EC /* Color.swift */,
+				B61EE11B2B637C8A009373EC /* BuyButton.swift */,
+				B61EE11D2B638D49009373EC /* RecipeCard.swift */,
 				B6926E632B60CF4100B9B79F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -257,9 +266,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6926E682B60CF4100B9B79F /* ContentView.swift in Sources */,
+				B61EE11C2B637C8A009373EC /* BuyButton.swift in Sources */,
 				B6926E952B60D14700B9B79F /* GameState.swift in Sources */,
 				B6926E932B60D09D00B9B79F /* PointGenerator.swift in Sources */,
+				B61EE11A2B63664D009373EC /* Color.swift in Sources */,
 				B6926E662B60CF4100B9B79F /* IdleClickerApp.swift in Sources */,
+				B61EE11E2B638D49009373EC /* RecipeCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

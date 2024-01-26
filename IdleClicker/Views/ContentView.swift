@@ -34,6 +34,7 @@ struct ContentView: View {
                     Image(.white)
                 }
                 .padding(20)
+                .cornerRadius(30)
             }
             .background(Color.black)
             .padding(20)
@@ -41,127 +42,8 @@ struct ContentView: View {
             
             
             List(gameState.pointGenerators){pointGenerator in
-                if pointGenerator.level > 0 {
-                    HStack{
-                        Image(pointGenerator.imgname)
-                            .frame(width: 52, height: 93)
-                            .padding()
-                        VStack() {
-                            
-                            Text(pointGenerator.name)
-                                .font(.title)
-                            
-                            HStack{
-                                VStack{
-                                    Text("PPS: \(pointGenerator.pps)")
-                                    Text("Cost: $\(pointGenerator.price)")
-                                }
-                                
-                                if pointGenerator.price > gameState.points{
-                                    Button(action:{
-                                        self.gameState.purchase(pointGenerator: pointGenerator)
-                                    }){
-                                        
-                                        Text("$\(pointGenerator.price)")
-                                            .font(.headline)
-                                        Text("+\(pointGenerator.pps) dps")
-                                    }
-                                    .cornerRadius(8)
-                                    .disabled(true)
-                                }else{
-                                    Button(action:{
-                                        self.gameState.purchase(pointGenerator: pointGenerator)
-                                    }){
-                                        
-                                        Text("$\(pointGenerator.price)")
-                                            .font(.headline)
-                                        Text("+\(pointGenerator.pps) dps")
-                                    }
-                                    .background(Color.green)
-                                    .foregroundStyle(Color.white)
-//                                    .border(.black)
-                                    .cornerRadius(8)
-                                    
-                                }
-                            }
-                            
-                        }
-                    }
-                    
-                    
-                    .background(Color.gray)
-                    .cornerRadius(12)
-                }else{
-                    
-                    HStack{
-                        Image(.gray)
-                            .frame(width: 52, height: 93)
-                            .padding()
-                        VStack() {
-                            
-                            Text("???")
-                                .font(.title)
-                            
-                            HStack{
-                                VStack{
-                                    Text("Upgrade")
-                                        .font(.headline)
-                                }
-                                if pointGenerator.price > gameState.points{
-                                    Button(action:{
-                                        self.gameState.purchase(pointGenerator: pointGenerator)
-                                    }){
-                                        
-                                        Text("$\(pointGenerator.price)")
-                                            .font(.headline)
-                                        Text("+\(pointGenerator.pps) dps")
-                                    }
-                                    .cornerRadius(8)
-                                    .disabled(true)
-                                }else{
-                                    Button(action:{
-                                        self.gameState.purchase(pointGenerator: pointGenerator)
-                                    }){
-                                        
-                                        Text("$\(pointGenerator.price)")
-                                            .font(.headline)
-                                        Text("+\(pointGenerator.pps) dps")
-                                    }
-                                    .background(Color.green)
-                                    .foregroundStyle(Color.white)
-//                                    .border(.black)
-                                    .cornerRadius(8)
-                                    
-                                }
-                            }
-                            
-                        }
-                    }
-                }
-                Spacer()
-                       
-                        
-                        //                        HStack{
-                        //                        Text("Level: ")
-                        //                            if pointGenerator.level > 0{
-                        //                                ForEach (1...pointGenerator.level, id:\.self) { level in
-                        //                                    Circle()
-                        //                                        .strokeBorder( .purple, lineWidth:4)
-                        //                                        .frame(width: 15, height: 15)
-                        //                                }
-                        //                            }else{
-                        //                                Text("0")
-                        //                            }
-                        //                            if pointGenerator.level > 0{
-                        //                                Text("Level: \(pointGenerator.level)")
-                        //                            }else{}
-                        //                        Text("PPS: \(pointGenerator.pps)")
-                        //                        Text("Cost: $\(pointGenerator.price)")
-                        //                    }
-
-                    
-                }
-            
+               RecipeCard(gameState: gameState, pg: pointGenerator)
+            }
         }
     }
 }

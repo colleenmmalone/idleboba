@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct PointGenerator: Identifiable{
     var id = UUID()
@@ -14,4 +15,5 @@ struct PointGenerator: Identifiable{
     var price:Int
     var level:Int
     var imgname:String
+    var bgColor:Color
 }
