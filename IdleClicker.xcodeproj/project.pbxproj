@@ -16,6 +16,7 @@
 		B6926E6E2B60CF4400B9B79F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6926E6D2B60CF4400B9B79F /* Preview Assets.xcassets */; };
 		B6926E932B60D09D00B9B79F /* PointGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6926E922B60D09D00B9B79F /* PointGenerator.swift */; };
 		B6926E952B60D14700B9B79F /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6926E942B60D14700B9B79F /* GameState.swift */; };
+		B697C7302B6B690A0089CD7F /* NumberDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B697C72F2B6B690A0089CD7F /* NumberDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B6926E7D2B60CF4400B9B79F /* IdleClickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdleClickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6926E922B60D09D00B9B79F /* PointGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointGenerator.swift; sourceTree = "<group>"; };
 		B6926E942B60D14700B9B79F /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		B697C72F2B6B690A0089CD7F /* NumberDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				B61EE1192B63664D009373EC /* Color.swift */,
 				B61EE11B2B637C8A009373EC /* BuyButton.swift */,
 				B61EE11D2B638D49009373EC /* RecipeCard.swift */,
+				B697C72F2B6B690A0089CD7F /* NumberDisplay.swift */,
 				B6926E632B60CF4100B9B79F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				B6926E952B60D14700B9B79F /* GameState.swift in Sources */,
 				B6926E932B60D09D00B9B79F /* PointGenerator.swift in Sources */,
 				B61EE11A2B63664D009373EC /* Color.swift in Sources */,
+				B697C7302B6B690A0089CD7F /* NumberDisplay.swift in Sources */,
 				B6926E662B60CF4100B9B79F /* IdleClickerApp.swift in Sources */,
 				B61EE11E2B638D49009373EC /* RecipeCard.swift in Sources */,
 			);

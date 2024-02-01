@@ -31,10 +31,9 @@ struct BuyButton: View {
             let textColor = isDisabled ? Color.dkGray : Color.dkGreen
             let borderColor = isDisabled ? Color.mdGray : Color.mdGreen
             VStack{
-                Text("$\(pg.price)")
+                Text("$\(numberDisplay(num:(pg.price)))")
                     .font(.system(size: 18))
-                
-                Text("+\(pg.pps) dps")
+                Text("\(numberDisplay(num:(pg.dps))) dps")
                     .font(.system(size: 12))
             }
             .frame(width: 75, height: 50)
@@ -42,14 +41,14 @@ struct BuyButton: View {
             .background(bgColor)
             .overlay(
                 RoundedRectangle(cornerRadius: 8)
-                    .stroke(borderColor, lineWidth: 2)
+                .stroke(borderColor, lineWidth: 2)
             )
             
-            
         }
+        .buttonRepeatBehavior(.enabled)
         .cornerRadius(8)
     }
-
+    
 }
 
 struct BuyButton_Previews: PreviewProvider {

@@ -13,21 +13,28 @@ struct ContentView: View {
     // user core data to save progress
     // add option to restart
     // add a menu
-    // Allow level indicators to wrap or exchange
-    // make whole bar clickable
     // add cute graphics
+    // have an animated scene of people or boba
+    // move recipes to a menu
+    // add options to improve boba maker or milk options
+    //    make top bar clickable 
     
     
     var body: some View {
         VStack {
-            HStack{
+            //            Text(numberDisplay(num: 3))
+            
+            //            HStack{
+            Button(action:{
+                self.gameState.click()
+            }){
                 HStack{
                     Image(.white)
                     Spacer()
                     VStack{
-                        Text("$\(gameState.points)")
+                        Text("$\(numberDisplay(num:gameState.points))")
                             .font(.title)
-                        Text("\(gameState.pps) dps")
+                        Text("\(numberDisplay(num:gameState.dps)) dps")
                         
                     }.foregroundStyle(Color.white)
                     Spacer()
@@ -42,7 +49,7 @@ struct ContentView: View {
             
             
             List(gameState.pointGenerators){pointGenerator in
-               RecipeCard(gameState: gameState, pg: pointGenerator)
+                RecipeCard(gameState: gameState, pg: pointGenerator)
             }
         }
     }

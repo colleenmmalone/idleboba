@@ -38,7 +38,7 @@ struct RecipeCard: View {
                     (VStack{
                         Text("Lvl \(pg.level)")
                             .font(.headline)
-                        Text("PPS: \(pg.pps)")
+                        Text("DPS: \(numberDisplay(num:(pg.dps * pg.level)))")
                             .font(.system(size: 12))
                     })
                     .padding(.horizontal)
