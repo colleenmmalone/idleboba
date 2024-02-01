@@ -82,10 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				B6926E642B60CF4100B9B79F /* IdleClicker */,
-				B61EE1192B63664D009373EC /* Color.swift */,
-				B61EE11B2B637C8A009373EC /* BuyButton.swift */,
-				B61EE11D2B638D49009373EC /* RecipeCard.swift */,
-				B697C72F2B6B690A0089CD7F /* NumberDisplay.swift */,
 				B6926E632B60CF4100B9B79F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B6926E652B60CF4100B9B79F /* IdleClickerApp.swift */,
+				B61EE1192B63664D009373EC /* Color.swift */,
 				B6926E902B60D01E00B9B79F /* Models */,
 				B6926E912B60D04D00B9B79F /* Views */,
 				B6926E6B2B60CF4400B9B79F /* IdleClicker.entitlements */,
@@ -124,8 +121,9 @@
 		B6926E902B60D01E00B9B79F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B6926E922B60D09D00B9B79F /* PointGenerator.swift */,
 				B6926E942B60D14700B9B79F /* GameState.swift */,
+				B697C72F2B6B690A0089CD7F /* NumberDisplay.swift */,
+				B6926E922B60D09D00B9B79F /* PointGenerator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -133,7 +131,9 @@
 		B6926E912B60D04D00B9B79F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B61EE11B2B637C8A009373EC /* BuyButton.swift */,
 				B6926E672B60CF4100B9B79F /* ContentView.swift */,
+				B61EE11D2B638D49009373EC /* RecipeCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
